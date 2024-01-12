@@ -19,10 +19,12 @@
                 <section class="tags">
                     <p class="tags__titulo">Busque por tags:</p>
                     <ul class="tags__lista">
-                        <li class="tags__tag">Nebulosa</li>
-                        <li class="tags__tag">Estrela</li>
-                        <li class="tags__tag">Galáxia</li>
-                        <li class="tags__tag">Planeta</li>
+                        {% if cards %}
+                        {% for fotografia in cards %}
+                        <li class="tags__tag">{{ fotografia.categoria}}</li>
+                        {% endfor %}
+                        {% else %}
+                        {% endif %}
                     </ul>
                 </section>
                 <section class="galeria">
@@ -35,7 +37,7 @@
                                 <a href="{% url 'imagem' fotografia.id %}">
                                     <img class="card__imagem" src="{%static '/assets/imagens/galeria/'%}{{ fotografia.foto }}" alt="foto">
                                 </a>
-                                <span class="card__tag">Estrelas</span>
+                                <span class="card__tag">{{ fotografia.categoria }}</span>
                                 <div class="card__info">
                                     <p class="card__titulo">{{ fotografia.nome }}</p>
                                     <div class="card__texto">
