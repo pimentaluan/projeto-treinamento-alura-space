@@ -255,6 +255,7 @@ table {
 .menu-lateral__navegacao {
     display: flex;
     flex-direction: column;
+    margin-left: 20px;
 }
 
 .menu-lateral__navegacao a {
@@ -342,6 +343,8 @@ table {
     display: flex;
     justify-content: space-between;
     color: #FFFFFF;
+    position: fixed;
+    bottom: 0;
 }
 
 .rodape__icones {
