@@ -255,6 +255,7 @@ table {
 .menu-lateral__navegacao {
     display: flex;
     flex-direction: column;
+    margin-left: 20px;
 }
 
 .menu-lateral__navegacao a {

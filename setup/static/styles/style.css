@@ -343,8 +343,6 @@ table {
     display: flex;
     justify-content: space-between;
     color: #FFFFFF;
-    position: fixed;
-    bottom: 0;
 }
 
 .rodape__icones {
