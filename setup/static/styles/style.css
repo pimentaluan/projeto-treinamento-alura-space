@@ -334,6 +334,8 @@ table {
 .principal {
     display: flex;
     justify-content: space-between;
+    padding-left: 20px;
+    margin-right: 100px;
 }
 
 .rodape {
@@ -415,4 +417,8 @@ button{
     background-color: transparent;
     border-radius: 50px;
     margin-bottom: 20px;
+}
+
+#form_login{
+    margin-right: 400px;
 }

@@ -4,7 +4,7 @@
 <body>
     <div class="pagina-inicial">
             <section class="galeria" >
-                <form action="{% url 'login' %}" method="POST">
+                <form id="form_login" action="{% url 'login' %}" method="POST">
                 {% csrf_token %}
                     <div class="row">
                         {% for field in form.visible_fields %}
