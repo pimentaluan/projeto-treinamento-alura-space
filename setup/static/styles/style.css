@@ -194,6 +194,7 @@ table {
 .galeria {
     display: flex;
     width: 100%;
+    margin-left: 0;
 }
 
 .imagem {
@@ -280,7 +281,7 @@ table {
 .pagina-inicial {
     max-width: 1440px;
     padding: 1.5rem;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .populares {
@@ -413,4 +414,5 @@ table {
 button{
     background-color: transparent;
     border-radius: 50px;
+    margin-bottom: 20px;
 }

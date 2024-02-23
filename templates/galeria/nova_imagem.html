@@ -3,7 +3,7 @@
 {% block content %}
 <body>
     <div class="pagina-inicial">
-            <section class="galeria" style="margin-left: 5em">
+            <section class="galeria" >
                 <form action="{% url 'nova_imagem' %}" method="POST" enctype="multipart/form-data">
                     {% csrf_token %}
                     <div class="row">

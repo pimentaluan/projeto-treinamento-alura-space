@@ -4,8 +4,8 @@
 <body>
     <div class="pagina-inicial">
             <section class="galeria" >
-                <form action="{% url 'login' %}" method="POST">
-                {% csrf_token %}
+                <form action="{% url 'editar_imagem' fotografia.id %}" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
                     <div class="row">
                         {% for field in form.visible_fields %}
                         <div class="col-12 col-lg-12" style="margin-bottom: 10px;">
@@ -14,7 +14,7 @@
                         </div>
                         {% endfor %}
                         <div>
-                            <button class="btn btn-success col-12" style="padding: top 5px;" type="submit">Entrar</button>
+                            <button class="btn btn-success col-12" style="padding: top 5px;" type="submit">Editar fotografia</button>
                         </div>
                     </div>
                 </form>

@@ -1,0 +1,20 @@
+{% extends 'shared/base.html' %}
+{% load static %}
+{% block content %}
+<body>
+    <div class="pagina-inicial">
+            <section class="galeria" >
+                <form action="{% url 'deletar_imagem' fotografia.id %}" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="card">
+                            <h2>Você tem certeza que deseja deletar essa imagem?</h2>
+                            <button class="btn btn-danger col-12" style="padding: top 5px;" type="submit">Deletar</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+{% endblock %}
